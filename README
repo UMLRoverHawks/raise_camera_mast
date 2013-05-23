@@ -1,0 +1,10 @@
+Simple node that listens for boolean messages in /raise_camera_mast topic, if it gets a true, it raises the mast to -11,
+disables torque to it and kills itself
+
+Usage
+rosrun raise_camera_mast raise_camera_mast.py
+
+Assumptions
+Servo is /dev/camera_mast_servo and accessible to current user
+Servo id is 2
+
