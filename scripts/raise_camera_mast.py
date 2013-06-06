@@ -12,7 +12,7 @@ def callback(data):
                 while True:
 	             if p.is_moving() == False:
 		         p.disable_torque()
-		         rospy.signal_shutdown('Done')
+		         #rospy.signal_shutdown('Done')
 
 def raise_camera_mast():
     rospy.init_node('raise_camera_mast', anonymous=False)
